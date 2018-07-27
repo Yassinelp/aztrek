@@ -1,0 +1,121 @@
+h2 {
+    color: $blue;
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+h3 {
+    color: $orange;
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+/* ******************************************************
+                    HEADER
+***************************************************** */
+
+.header-logo {
+    margin: 0 auto;
+    max-width: 350px;
+    Padding-top: 2em;
+}
+
+.cta {
+    transition: 0.4s ease-in-out;
+}
+
+.cta:hover {
+    color: $blue;
+    background: $gray;
+    transform: scale(1.2);
+}
+
+/* ******************************************************
+                    SECTION 1: Planet'Aztrek
+***************************************************** */
+
+.community {
+    margin: 0 100px 0 50px;
+}
+
+.community-etap {
+    max-width: 300px;
+    padding: 0 10px;
+}
+
+.family-principe {
+    margin-bottom: 20px;
+    margin-top: 55px;
+}
+
+.cta-family {
+    margin-top: 15px;
+}
+
+.cta-parrainage, .cta-passeport {
+    margin-top: 50px;
+}
+
+/* ******************************************************
+                    SECTION 2: Nos Treks
+***************************************************** */
+.section-2 {
+    padding-top: 30px;
+}
+
+.section-2 h2 {
+    padding-bottom: 0;
+}
+
+.incontournables, .nouveautes {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nouveautes {
+    margin-bottom: 60px;
+}
+
+aside {
+    margin-top: 70px;
+}
+
+.slider-cont {
+    margin-left: 50px;
+    width: 400px;
+}
+
+.temoignage {
+    margin: 0 100px 10px 0;
+    max-width: 400px;
+}
+
+.nouveautes {
+    flex-direction: row-reverse;
+}
+
+.slider-cont2 {
+    margin-right: 100px;
+    width: 400px;
+}
+
+.expert {
+    margin: 0 0 10px 50px;
+    margin-top: 0;
+    max-width: 400px;
+}
+
+/* ******************************************************
+                    SECTION 3: Nos Treks
+***************************************************** */
+
+.qsn {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}

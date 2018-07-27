@@ -1,0 +1,13 @@
+@import 'partials/variables';
+
+@import 'partials/mixins';
+
+@import 'partials/bases'; //pour mobile
+
+@media only screen and (min-width: $bp-tablet){ //pour tablettes
+    @import 'partials/tablet';
+}
+
+@media only screen and (min-width: $bp-desktop){ //pour écran supérieur à 992px (ordi)
+    @import 'partials/desktop';
+}

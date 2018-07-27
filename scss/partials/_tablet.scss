@@ -1,0 +1,251 @@
+/* ******************************************************
+                    ANIMATIONS
+***************************************************** */
+
+@-webkit-keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.main-nav ul li a {
+    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ******************************************************
+                    HEADER
+***************************************************** */
+
+.video{
+    max-height: inherit;
+    .video-cont {
+        width: 100%;
+    }
+}
+
+.main-nav {
+    display: block;
+    padding-top: 20px;
+}
+
+.main-nav {
+    transition: 0.3s;
+}
+
+.main-nav > ul > li > a:hover {
+    border-bottom: 1px solid $orange;
+    transform: scale(1.1);
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: space-around;
+    a{
+        color: #fff;
+        display: inline-block;
+        font-weight: lighter;
+        padding: 1rem;
+        text-transform: capitalize;
+    }
+    .submenu {
+        display: none;
+    }
+}
+
+// MENU DEROULANT
+
+.main-nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav > ul > li {
+    float: left;
+    position: relative;
+}
+
+.main-nav > ul::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.main-nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.main-nav > ul > li > a {
+    color: #fff;
+    padding: 20px 30px;
+}
+
+.submenu {
+    display: none;
+}
+
+.main-nav li:hover .submenu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+
+.submenu li {
+    border-bottom: 1px solid $orange;
+}
+
+.submenu li a {
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 30px;
+    width: 270px;
+}
+
+.menu-sejours, .menu-planet {
+    transition: 0.4s ease-in-out;
+}
+
+.menu-sejours:hover, .menu-planet:hover {
+    background-color: rgba($orange, 0.2);
+    font-weight: bold;
+}
+
+// Fin du menu deroulant
+
+.burger {
+    display: none;
+}
+
+.header-logo {
+    margin: 0 auto;
+    margin-top: 2em;
+    max-width: 175px;
+}
+
+.second-nav {
+    position: fixed;
+    right: 50px;
+}
+
+.rs-nav {
+    transition: 0.3s ease-in-out;
+    width: 60px;
+}
+
+.rs-nav:hover {
+    margin-right: 20px;
+    transform: scale(1.3);
+}
+
+.menu-deroulant li a {
+    display: none;
+}
+
+/* ******************************************************
+                    SECTION 1: Planet'AZTREK
+***************************************************** */
+
+.community {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 100px;
+    max-width: 100%;
+}
+
+.community-etap {
+    max-width: 220px;
+    padding: 0 10px;
+}
+
+.family, .passeport, .parrainage {
+    height: 350px;
+}
+
+.passeport-principe, .parrainage-principe {
+    margin-top: 50px;
+}
+
+.family-principe {
+    margin-top: 75px;
+}
+
+/* ******************************************************
+                    SECTION 2: Nos Treks
+***************************************************** */
+
+
+
+/* ******************************************************
+                    SECTION 3: Qui Sommes-Nous?
+***************************************************** */
+
+.qsn {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+/* ******************************************************
+                    FOOTER
+***************************************************** */
+
+.rs-footer {
+    margin: 0 200px;
+}
+
+.link-footer {
+    align-items: center;
+    display: flex;
+}
+
+.link-footer ul {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    a {
+        display: inline-block;
+        padding: 1rem;
+    }
+    img {
+        float: left;
+        padding: 1rem;
+        transition: 0.3s ease;
+        width: 300px;
+    }
+}
+
+.cta-footer {
+    display: inline-block;
+    flex-basis: 33%;
+}
+
+.rs {
+    transition: 0.3s ease;
+}
+
+.rs:hover, .link-footer img:hover {
+    transform: scale(1.2);
+}
