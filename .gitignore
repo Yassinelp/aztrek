@@ -5,3 +5,4 @@ admin/node_modules/
 *.bak
 uploads/
 config/parameters.php
+*.DS_Store
